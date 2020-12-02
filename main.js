@@ -12,7 +12,11 @@ let board = new Board;
 
 function play() {
   board.reset();
+  let piece = new Piece(ctx);
 
+  piece.draw();
+
+  board.piece = piece;
   console.log(board.grid);
 }
 
